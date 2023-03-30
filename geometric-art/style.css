@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  width: 700px;
+  height: 700px;
+  background-color: lightgray;
+  border: 7px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.white-square {
+  width: 85%;
+  height: 85%;
+  background-color: white;
+}
