@@ -1,0 +1,72 @@
+:root {
+  --background-color: lightgray;
+  --heading-color: rgba(0, 0, 0, 0.8);
+  --text-color: rgba(0, 0, 0, 0.6);
+  --cart-button-color: rgb(86, 91, 241);
+  --
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--heading-color);
+}
+
+body {
+  max-width: 60ch;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 2rem;
+}
+
+p {
+  margin: 0;
+}
+
+.tile {
+  background-color: white;
+  border-radius: 0.5rem;
+  _background-image: linear-gradient(red, blue);
+}
+
+.product-img {
+  width: 60ch;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  z-index: -1;
+}
+
+.description-wrapper {
+  margin: 1.5rem;
+}
+.cart-wrapper {
+  background-color: rgba(211, 211, 211, 0.47);
+  margin: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.add-button {
+  background-color: var(--cart-button-color);
+  color: white;
+  margin: 0rem 4rem;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  border-radius: 0.2rem;
+}
