@@ -8,11 +8,12 @@
 html {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Manrope", sans-serif;
 }
 
 body {
   background-color: var(--background);
-  max-width: 80ch;
+  max-width: 60ch;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -24,28 +25,36 @@ body {
   background-color: var(--main-color);
   text-align: center;
   padding: 0.2rem 0rem;
-  margin: 0rem 6rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
 }
 
 .nav-bar {
-  background-color: hotpink;
+  _background-color: hotpink;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
+  max-width: 60ch;
 }
 
 .link-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: start;
-  gap: 0.3rem;
+  display: grid;
+  _flex-direction: column;
+  _justify-content: center;
+  _align-content: center;
+  gap: 0.5rem;
+  margin: 0rem;
   list-style: none;
+  padding-inline-start: unset;
+  width: 80%;
 }
 
 .link-bar > li {
   background-color: var(--main-color);
-  padding: 0.3rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  transition: transform 0.4s;
 }
 
 a {
@@ -55,4 +64,9 @@ a {
 
 a:visited {
   color: var(--text-color);
+}
+
+li:hover {
+  background-color: hotpink;
+  transform: scale(105%);
 }
