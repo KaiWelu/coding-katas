@@ -47,8 +47,7 @@ p {
 .product-img {
   width: 60ch;
   border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  z-index: -1;
+  border-top-right-radius: 0.5rem;  
 }
 
 .description-wrapper {
@@ -60,17 +59,44 @@ p {
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
+}
+
+
+
+.color-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
+  margin: 0.3rem 1rem 0rem 1rem;
 }
 
 .price {
   background-color: white;
-  margin: 1.2rem 1rem 0rem 1rem;
+  margin: 0.3rem 1rem 0rem 1rem;
   text-align: center;
   padding: 0.5rem 0rem;
   border-radius: 0.2rem;
+  font-weight: bold;
+  color: var(--heading-color);
+  grid-column-start: span 2;
 }
+
+.drop-wrapper {
+  margin: 0.3rem 1rem 0rem 1rem;
+}
+
+.drop-wrapper select {
+  border-radius: 0.2rem;
+  border: none;
+  width: 3rem;
+}
+
+label {
+  padding-right: 0.5rem;
+}
+
 
 .add-button {
   background-color: var(--cart-button-color);
@@ -79,4 +105,26 @@ p {
   text-align: center;
   padding: 0.5rem 0rem;
   border-radius: 0.2rem;
+  grid-column-start: span 2;
+}
+
+#blue {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: blue;
+  border-radius: 100%;
+}
+
+#red {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  border-radius: 100%;
+}
+
+#black {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 100%;
 }
