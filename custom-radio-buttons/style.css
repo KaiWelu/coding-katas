@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper {
+  margin-top: 20vmin;
+}
+
+.button {
+  _all: unset;
+}
+
+/*this class takes the labels out of the document flow and hides them to only be read by screenreaders*/
+.only-sr {
+  position: absolute;
+  visibility: hidden;
+}
