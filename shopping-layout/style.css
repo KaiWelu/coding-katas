@@ -17,7 +17,7 @@ h1 {
 }
 
 body {
-  _max-width: 60ch;
+  max-width: 100vmax;
   margin: 0 auto;
   background-color: var(--background-color);
   display: flex;
@@ -28,7 +28,7 @@ body {
 main {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -41,12 +41,12 @@ p {
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.1rem rgb(230, 228, 228);
   _background-image: linear-gradient(red, blue);
-  width: 60ch;
+  width: 100%;
   position: relative;
 }
 
 .product-img {
-  width: 60ch;
+  width: 100%;
   aspect-ratio: auto;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -54,7 +54,7 @@ p {
 }
 
 .gradient {
-  width: 60ch;
+  width: 100%;
   height: 100%;
   _background-color: hotpink;
   position: absolute;
