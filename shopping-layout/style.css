@@ -3,7 +3,6 @@
   --heading-color: rgba(0, 0, 0, 0.8);
   --text-color: rgba(0, 0, 0, 0.6);
   --cart-button-color: rgb(86, 91, 241);
-  --
 }
 
 html {
@@ -18,7 +17,7 @@ h1 {
 }
 
 body {
-  max-width: 60ch;
+  _max-width: 60ch;
   margin: 0 auto;
   background-color: var(--background-color);
   display: flex;
@@ -28,8 +27,8 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
   justify-content: center;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -42,12 +41,38 @@ p {
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.1rem rgb(230, 228, 228);
   _background-image: linear-gradient(red, blue);
+  width: 60ch;
+  position: relative;
 }
 
 .product-img {
-  width: 60ch;
+  height: 25rem;
+  background-image: linear-gradient(0deg, white 0%, transparent 50%),
+    url("./adidas.jpg");
   border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;  
+  border-top-right-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.credit {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.6rem;
+}
+
+.label {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(211, 211, 211, 0.4);
+  color: rgba(0, 0, 0, 0.693);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .description-wrapper {
@@ -62,8 +87,6 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
 }
-
-
 
 .color-wrapper {
   display: flex;
@@ -96,7 +119,6 @@ p {
 label {
   padding-right: 0.5rem;
 }
-
 
 .add-button {
   background-color: var(--cart-button-color);
