@@ -1,0 +1,13 @@
+:root {
+  --card-color: rgba(251, 251, 251, 1);
+  --background-color: #e5e5e5;
+  --main-color: rgba(106, 28, 195, 1);
+  --second-color: rgba(136, 73, 207, 1);
+  --white-text: rgba(251, 251, 251, 1);
+  --gray-text: rgba(0, 0, 0, 0.6);
+}
+
+html {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+}
