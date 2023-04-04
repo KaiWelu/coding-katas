@@ -23,6 +23,7 @@ body {
 main {
   background-color: var(--card-color);
   padding: 1rem;
+  position: relative;
 }
 
 p {
@@ -47,6 +48,7 @@ header {
   display: flex;
   justify-content: start;
   align-items: center;
+  position: relative;
   padding: 1rem 2rem 1rem 2rem;
   gap: 1rem;
 }
@@ -69,8 +71,15 @@ header svg {
   width: 2.5rem;
 }
 
+.arrow-wrapper {
+  margin: 0;
+  position: absolute;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+}
 .svg-arrow {
-  background-color: white;
+  background-color: transparent;
 }
 
 #main-arrow {
@@ -91,6 +100,7 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 1rem 1rem 2rem 1rem;
+  padding-top: 2rem;
   gap: 1rem;
 }
 
