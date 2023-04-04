@@ -49,7 +49,7 @@ header {
   justify-content: start;
   align-items: center;
   position: relative;
-  padding: 1rem 2rem 1rem 2rem;
+  margin: 2.5rem 2rem 1rem 2rem;
   gap: 1rem;
 }
 
@@ -125,6 +125,7 @@ article {
 #search-form {
   grid-column-start: 1;
   grid-column-end: -1;
+  position: relative;
 }
 
 #search-form-input {
@@ -144,6 +145,13 @@ article {
 #search-form-input:focus {
   outline: 0px solid var(--main-color);
   border-radius: 0.2rem;
+}
+
+.bi-search {
+  position: absolute;
+  top: 0.6rem;
+  right: 1.5rem;
+  color: var(--main-color);
 }
 
 #class-selector {
